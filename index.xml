@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Louis 敲 Blog</title>
+    <link>https://chanshenlee.github.io/</link>
+    <description>Recent content on Louis 敲 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 07 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chanshenlee.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>想成為軟體工程師，資管系的課我會這樣選</title>
+      <link>https://chanshenlee.github.io/blog/post-2/</link>
+      <pubDate>Sun, 07 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://chanshenlee.github.io/blog/post-2/</guid>
+      <description>關於網路上應該已經有非常多軟體工程師的影片，尤其是在疫情期間，各行各業都受到了非常大的影響，我不敢說軟體產業完全沒有，只不過軟體產業具有可以遠端工作，以及薪資待遇相對較高的特質，因此吸引不少轉職仔投入，而如果你完全沒有相關背景，想光靠自學成為一名軟體工程師的話，我只能說有難度！且難度頗高，仿間也有像是資策會、Bootcamp等機構，專門培養一些完全沒有任何基礎但又想當工程師的人，因此我會建議還是花錢投資自己吧！會少走很多彎路的。&#xA;認清事實，本科畢業其實優勢沒有多大！ 相信你看到這個標題，應該多少都有點疑惑？有些人可能會說你本科當然有優勢啊！你比別人多四年的時間接觸這個領域誒，是的您說的也沒錯！但我必須說，首先軟體業的技術每年都在不斷地變化與更新，本科的優勢我個人認為是在學習新技術會比較快上手，原理會較容易融會貫通，接下來重點來了，你以為資工系一畢業就能具備有成為軟體工程師的工作能力了嗎？其實大概只有50%而已。&#xA;至於資管系呢？大概只有20~30%左右吧，因此也出現了學校教的東西在業界根本沒屁用的聲音出現，再加上如果你念的不是頂大，又剛好你讀的科系不是該校重點培育的科系，在校成績也普普(這裡的普普指的是成績有過就好，不會去追求GDP的同學)，那你的％數是不是其實跟一個非本科的人差不了多少，你的優勢就只有字面上的意思你是本科而已，你可能其實只有10%甚至連10%都不到的基礎，會出現這樣的問題，個人認為有幾點原因。&#xA;學校教育體系的不足： 學校在相關領域的課程可能過於理論性，缺乏實際應用和實務經驗，這容易導致畢業生在實際工作中感到不太適應。 學校未能及早提供學生有關該目標行業的實際資訊和職涯規劃的指導，導致畢業生不了解自己未來的職業選擇。 課程規劃的不足： 學生在大一時可能缺乏對未來職業的清晰了解，缺乏對整體學習路徑的規劃，這可能導致他們在畢業後缺乏特定領域的專業知識，無法滿足行業的實際需求。 學生可能未能有目標地選擇與他們職業目標相關的選修課程，使他們在畢業後具備實際應用技能。 自主學習和實踐的不足： 部分學生可能在大學期間缺乏主動學習和實踐新技術的意願。自主學習是在快速變化的技術環境中不可或缺的一部分，而缺乏這方面的能力可能使畢業生在實際工作中感到困難。 缺乏對自我學習的養成，可能導致畢業生在畢業後難以跟上技術的發展，影響其在職場上的競爭力。 如果你跟我一樣也是本科10%仔，但又想當軟體工程師 網路上一堆人分享如何從xxx行業轉職軟體工程師，花了x個月，我成功轉職了之類的影片，但卻很少人分享如果你是本科，學校很普通，成績很普通，又是到了大四快畢業才想走軟體工程師這條路的人該怎麼做？</description>
+    </item>
+    <item>
+      <title>Github上自架Blog</title>
+      <link>https://chanshenlee.github.io/blog/post-1/</link>
+      <pubDate>Sat, 30 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://chanshenlee.github.io/blog/post-1/</guid>
+      <description>關於這個Blog 會想開始寫Blog，主要原因是想增進自己的寫作技巧，以及分享我經歷事情以後思考的內容，因為我發現自己在思維表達上可以做的更好，如果只有輸入而沒有輸出的話沒有辦法練習我自己在輸出思維這件事上，所以我決定透過寫文章的方式來組織自己的思考脈絡。</description>
+    </item>
+    <item>
+      <title>跨出舒適圈，你可以這樣做</title>
+      <link>https://chanshenlee.github.io/blog/post-3/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <guid>https://chanshenlee.github.io/blog/post-3/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
