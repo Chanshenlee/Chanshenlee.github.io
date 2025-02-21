@@ -6,20 +6,20 @@
     <description>Recent content in Categories on Louis 敲 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 20 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chanshenlee.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Investment</title>
-      <link>https://chanshenlee.github.io/categories/investment/</link>
-      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://chanshenlee.github.io/categories/investment/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Chat</title>
       <link>https://chanshenlee.github.io/categories/chat/</link>
-      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://chanshenlee.github.io/categories/chat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Invest</title>
+      <link>https://chanshenlee.github.io/categories/invest/</link>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://chanshenlee.github.io/categories/invest/</guid>
       <description></description>
     </item>
     <item>
