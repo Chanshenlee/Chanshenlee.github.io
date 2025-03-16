@@ -9,7 +9,7 @@ function checkPassword() {
         confirmButtonText: '確定',
         cancelButtonText: '取消',
         preConfirm: (password) => {
-            if (password === "louis666666") {
+            if (password === "louis666") {
                 Swal.fire('密碼正確', '進入功能！', 'success');
                 window.location.href = window.location.origin + "/judy/";
             } else {
