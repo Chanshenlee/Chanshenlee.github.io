@@ -2,8 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://chanshenlee.github.io/judy/</loc>
-  </url><url>
     <loc>https://chanshenlee.github.io/categories/</loc>
     <lastmod>2025-03-04T00:00:00+00:00</lastmod>
   </url><url>
@@ -47,5 +45,7 @@
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://chanshenlee.github.io/tags/</loc>
+  </url><url>
+    <loc>https://chanshenlee.github.io/judy/</loc>
   </url>
 </urlset>
