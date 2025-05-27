@@ -1,5 +1,5 @@
 // 初始化 EmailJS
-emailjs.init("Se-vmMLElsoWnZqBA");
+emailjs.init("K3ZuJ4teuOSxQI2s2");
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
   event.preventDefault();
