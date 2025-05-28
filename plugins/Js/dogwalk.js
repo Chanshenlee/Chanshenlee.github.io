@@ -426,5 +426,5 @@ function dog() {
 
 }
   
-document.addEventListener('DOMContentLoaded', dog)
+window.addEventListener('DOMContentLoaded', dog)
 

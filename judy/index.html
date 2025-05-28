@@ -189,12 +189,12 @@
   
   
 <audio class="blup" style="display: none">
-<source src="https://www.freesound.org/data/previews/265/265115_4373976-lq.mp3" type="audio/ogg">
+<source src="https://www.freesound.org/data/previews/265/265115_4373976-lq.mp3" type="audio/ogg" >
 </audio >
 <audio class="blop" style="display: none">
-<source src="https://www.freesound.org/data/previews/265/265115_4373976-lq.mp3" type="audio/ogg">
+<source src="https://www.freesound.org/data/previews/265/265115_4373976-lq.mp3" type="audio/ogg" >
 </audio>
-<div class="sound">sound</div>
+<div class="sound sound--off">sound</div>
 
 
 <div class="love-counter">
@@ -551,8 +551,6 @@
     </div>
 </div>
 
-
-
 <div class="feedback-form">
     <h2>VIP Talk Box</h2>
     <form id="contactForm">
@@ -569,9 +567,10 @@
     </form>
 </div> 
 
+
+
 <div class="dogwrapper">
-    <h1>POV : 當女友說想遛狗</h1>
-    <p>（此區為遛狗區）</p>
+    
   
     <div class="marker red d-none"></div>
 
@@ -604,6 +603,20 @@
         <div class="tail img-bg"></div>
       </div>
     </div> 
+</div>
+
+
+
+<div class="message-wall">
+  <h2>💌 給未來的我們</h2>
+  <form id="messageForm">
+    <textarea placeholder="寫下想對未來的我們說的話..." required></textarea>
+    <button type="submit">送出留言</button>
+  </form>
+  <div class="info" id="infoText"></div>
+  <div class="messages" id="messages">
+    
+  </div>
 </div>
 
 
@@ -682,6 +695,11 @@
 
 
 <script src="/plugins/Js/dogwalk.js"></script>
+
+
+
+
+<script src="/plugins/Js/saywall.js"></script>
 
 
 
