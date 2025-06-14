@@ -275,21 +275,85 @@
 <script src="/plugins/Js/viptalkbox.js"></script>
 
 
+<script type="module">
+  
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+  import { getFirestore, collection, addDoc, onSnapshot, deleteDoc, doc, serverTimestamp, query, orderBy } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
 
+  
+  const firebaseConfig = {
+    apiKey: "AIzaSyCSEWS1GgxmHO9UpEsrt-rglttzdQewh4E",
+    authDomain: "staywall-3d2db.firebaseapp.com",
+    projectId: "staywall-3d2db",
+    storageBucket: "staywall-3d2db.firebasestorage.app",
+    messagingSenderId: "518350725195",
+    appId: "1:518350725195:web:2f20869adafac5ec666dce",
+    measurementId: "G-0N4XHKJEMM"
+  };
 
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
 
+  const form = document.getElementById('messageForm');
+  const textarea = form.querySelector('textarea');
+  const messagesDiv = document.getElementById('messages');
+  const infoText = document.getElementById('infoText');
 
+  let canDelete = false; 
 
+  
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const text = textarea.value.trim();
+    if (!text) return;
 
+    try {
+      await addDoc(collection(db, "messages"), {
+        text,
+        createdAt: serverTimestamp()
+      });
+      textarea.value = "";
+      infoText.textContent = "已成功送出留言！";
+      setTimeout(() => infoText.textContent = "", 3000);
+    } catch (err) {
+      infoText.textContent = "留言失敗，請稍後再試。";
+    }
+  });
 
+  
+  const q = query(collection(db, "messages"), orderBy("createdAt", "desc"));
+  onSnapshot(q, (snapshot) => {
+    messagesDiv.innerHTML = '';
+    const totalMessages = snapshot.size;
+    canDelete = totalMessages >= 10;
 
+    snapshot.forEach(docSnap => {
+      const msg = docSnap.data();
+      const div = document.createElement('div');
+      div.className = 'message';
 
+      const timeStr = msg.createdAt?.toDate().toLocaleString('zh-TW') || '';
 
+      div.innerHTML = `
+        <p>${msg.text}</p>
+        <span class="timestamp">${timeStr}</span>
+        ${canDelete ? `<button class="delete-btn" data-id="${docSnap.id}">✕</button>` : ''}
+      `;
+      messagesDiv.appendChild(div);
+    });
+  });
 
-
-
-
-
+  
+  messagesDiv.addEventListener('click', async (e) => {
+    if (e.target.classList.contains('delete-btn') && canDelete) {
+      const id = e.target.getAttribute('data-id');
+      const confirmed = confirm("你確定要刪除這則留言嗎？");
+      if (confirmed) {
+        await deleteDoc(doc(db, "messages", id));
+      }
+    }
+  });
+</script>
 
 
 <!-- JS Plugins -->
