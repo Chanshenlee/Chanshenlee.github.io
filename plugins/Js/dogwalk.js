@@ -1,12 +1,12 @@
 
 function dog() { 
 
-  // 管理 DOM
   const elements = {
     body: document.querySelector('.dogwrapper'),
     wrapper: document.querySelector('.dogwrapper'),
     dog: document.querySelector('.dog'),
     marker: document.querySelectorAll('.marker'),
+    // indicator: document.querySelector('.indicator'),
   }
 
   const animationFrames = {
@@ -26,8 +26,13 @@ function dog() {
 
   const angles = [360, 45, 90, 135, 180, 225, 270, 315]
   const defaultEnd = 4
-
-  // 狗的走路動畫分隔定義
+  //  A ---- A  ________ ________
+  // |         |         |        |
+  // | ^     ^ |         |        |
+  //  ____^___  _________|________|
+  //            | |  | |  | |  | |
+  //             1    2    3    4
+  //             L    R    L    R
   const partPositions = [
     { //0
       leg1: { x: 26, y: 43 },
@@ -87,7 +92,6 @@ function dog() {
     }, 
   ]
 
-  // 控制狗的目標狀態和方向
   const control = {
     x: null,
     y: null,
@@ -99,7 +103,6 @@ function dog() {
   const px = num => `${num}px`
   const radToDeg = rad => Math.round(rad * (180 / Math.PI))
   const degToRad = deg => deg / (180 / Math.PI)
-
   const overlap = (a, b) =>{
     const buffer = 20
     return Math.abs(a - b) < buffer
@@ -161,9 +164,12 @@ function dog() {
     dog.childNodes[13].childNodes[1].classList.add('wag')
   }
 
-  // 播放狗狗走路動畫的每一幀畫面
   const animateDog = ({ target, frameW, currentFrame, end, data, part, speed, direction }) => {
     const offset = direction === 'clockwise' ? 1 : -1
+
+    //update indicator
+    // elements.indicator.innerHTML = `dog-angle: ${data.angle} | control angle:${control.angle} | currentFrame: ${currentFrame} | direction: ${direction} | offset: ${offset} | frameOffset: ${data.animation[currentFrame][0] * frameW * offset} | ${data.facing.x} / ${data.facing.y} `
+
     target.style.transform = `translateX(${px(data.animation[currentFrame][0] * -frameW)})`
     if (part === 'body') {
       positionLegs(data.dog, currentFrame)
@@ -175,7 +181,7 @@ function dog() {
     data.angle = angles[currentFrame]
     data.index = currentFrame
 
-    target.parentNode.classList[data.animation[currentFrame][1] === 'f' ? 'add' : 'remove']('flip')
+  target.parentNode.classList[data.animation[currentFrame][1] === 'f' ? 'add' : 'remove']('flip')
 
     let nextFrame = currentFrame + offset
     nextFrame = nextFrame === -1 
@@ -202,7 +208,6 @@ function dog() {
     }
   }
 
-  // 啟動狗狗動畫的一次性包裝器
   const triggerDogAnimation = ({ target, frameW, start, end, data, speed, part, direction }) => {
     clearTimeout(data.timer[part])
     data.timer[part] = setTimeout(()=> animateDog({
@@ -212,7 +217,6 @@ function dog() {
     }), speed || 150)
   }
 
-  // 判斷目標點要順時針還是逆時針轉
   const getDirection = ({ pos, facing, target }) =>{
     const dx2 = facing.x - pos.x
     const dy1 = pos.y - target.y
@@ -222,7 +226,6 @@ function dog() {
     return dx2 * dy1 > dx1 * dy2 ? 'anti-clockwise' : 'clockwise'
   }
 
-  // 讓狗轉身的動畫邏輯
   const turnDog = ({ dog, start, end, direction }) => {
     triggerDogAnimation({ 
       target: dog.dog.childNodes[3].childNodes[1],
@@ -247,7 +250,6 @@ function dog() {
     }, 200)
   }
 
-  // 建立一個狗的狀態物件
   const createDog = () => {
     const { dog } = elements
     const { width, height, left, top } = dog.getBoundingClientRect()
@@ -288,9 +290,8 @@ function dog() {
     positionTail(dog, 0)
   }
 
-  // 限制狗的移動範圍，並更新狗的位置資料與畫面位置
   const checkBoundaryAndUpdateDogPos = (x, y, dog, dogData) =>{
-    const lowerLimit = -40  // 離視窗邊緣太近時不允許移動過去
+    const lowerLimit = -40 // buffer from window edge
     const upperLimit = 40
     if (x > lowerLimit && x < (elements.body.clientWidth - upperLimit)){
       dogData.pos.x = x + 48
@@ -304,7 +305,6 @@ function dog() {
     dog.style.top = px(y)
   }
 
-  // 控制狗狗一步步走向目標（滑鼠點）
   const positionMarker = (i, pos) => {
     elements.marker[i].style.left = px(pos.x)
     elements.marker[i].style.top = px(pos.y)
@@ -382,8 +382,6 @@ function dog() {
   createDog()
 
   const triggerTurnDog = () => {
-
-    
     const dog = elements.dog
     dog.walk = false
     control.angle = null
@@ -400,31 +398,24 @@ function dog() {
       dog,
       start, end, direction
     })
+    
+    console.log('🧭 DOG angle:', dog.angle)
+    console.log('🎯 CONTROL:', control)
+    console.log('📐 targetAngle:', targetAngle(dog))
+    console.log('🔁 from', angles.indexOf(dog.angle), 'to', angles.indexOf(targetAngle(dog)))
 
   }
 
   elements.body.addEventListener('mousemove', e =>{
-    const rect = elements.body.getBoundingClientRect()
-    control.x = e.clientX - rect.left
-    control.y = e.clientY - rect.top
-    
+    control.x = e.pageX
+    control.y = e.pageY
     triggerTurnDog()
   })
 
 
-
-  elements.body.addEventListener('click', e => {
-    const rect = elements.body.getBoundingClientRect()
-    control.x = e.clientX - rect.left
-    control.y = e.clientY - rect.top
-    triggerTurnDog()
-    moveDog()
-  })
-
-
-
+  elements.body.addEventListener('click', moveDog)
 
 }
   
-window.addEventListener('DOMContentLoaded', dog)
+document.addEventListener('DOMContentLoaded', dog)
 

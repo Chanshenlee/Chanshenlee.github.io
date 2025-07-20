@@ -8,10 +8,16 @@ function checkPassword() {
         showCancelButton: true,
         confirmButtonText: '確定',
         cancelButtonText: '取消',
-        preConfirm: (password) => {
-            if (password === "louis666") {
-                Swal.fire('密碼正確', '進入功能！', 'success');
-                window.location.href = window.location.origin + "/judy/";
+        preConfirm: (inputPassword) => {
+            const passwordObfuscated = (() => {
+                const parts = ["bG91", "aXM2", "NjY="]; 
+                return atob(parts.join(""));
+            })();
+
+            if (inputPassword === passwordObfuscated) {
+                Swal.fire('密碼正確', '進入功能！', 'success').then(() => {
+                    window.location.href = window.location.origin + "/judy/";
+                });
             } else {
                 Swal.fire('密碼錯誤', '請重試', 'error');
             }
