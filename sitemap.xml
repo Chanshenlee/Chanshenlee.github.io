@@ -1,19 +1,90 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://chanshenlee.github.io/blog/</loc><lastmod>2024-01-19T00:00:00Z</lastmod></url>
-  
-  <url>
-    <loc>https://chanshenlee.github.io/about/</loc><lastmod>2019-10-29T13:49:23&#43;06:00</lastmod></url>
-  
-  <url>
-    <loc>https://chanshenlee.github.io/contact/</loc><lastmod>2019-10-29T13:49:23&#43;06:00</lastmod></url>
-  
-  <url>
-    <loc>https://chanshenlee.github.io/search/</loc><lastmod>2019-10-29T13:49:23&#43;06:00</lastmod></url>
-  
-  <url>
-    <loc>https://chanshenlee.github.io/judy/</loc></url>
-  
+    <loc>https://chanshenlee.github.io/categories/</loc>
+    <lastmod>2025-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/categories/invest/</loc>
+    <lastmod>2025-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/invest-8/</loc>
+    <lastmod>2025-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/</loc>
+    <lastmod>2025-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/invest-7/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/invest-6/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/categories/travel/</loc>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/travel-2/</loc>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/travel-1/</loc>
+    <lastmod>2025-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/categories/chat/</loc>
+    <lastmod>2025-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/chat-6/</loc>
+    <lastmod>2025-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/invest-5/</loc>
+    <lastmod>2025-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/invest-4/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/invest-3/</loc>
+    <lastmod>2025-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/invest-2/</loc>
+    <lastmod>2025-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/invest-1/</loc>
+    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/chat-5/</loc>
+    <lastmod>2025-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/chat-4/</loc>
+    <lastmod>2025-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/chat-3/</loc>
+    <lastmod>2024-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/</loc>
+    <lastmod>2024-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/categories/work/</loc>
+    <lastmod>2024-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/work-1/</loc>
+    <lastmod>2024-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/chat-1/</loc>
+    <lastmod>2024-01-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/blog/chat-2/</loc>
+    <lastmod>2023-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/about/</loc>
+    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/contact/</loc>
+    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/search/</loc>
+    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
+  </url><url>
+    <loc>https://chanshenlee.github.io/judy/</loc>
+  </url><url>
+    <loc>https://chanshenlee.github.io/tags/</loc>
+  </url>
 </urlset>
