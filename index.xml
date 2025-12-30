@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 路易斯掌聲 All rights reserved.</copyright>
-    <lastBuildDate>Fri, 22 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chanshenlee.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>峇里島遊記 EP.3</title>
+      <link>https://chanshenlee.github.io/blog/traveldiary3/</link>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://chanshenlee.github.io/blog/traveldiary3/</guid>
+      <description>時間很快的來到了第三天，今天的重點行程就是 ATV 啦，在社群上看到他人分享的 ATV 影片看起來超有趣的，這天是星期一，快樂和痛苦都是比較出來的，一想到如果是平常的我這時間一定是衝忙的騎著摩托車去公司上班打卡報到，而現在我準備在 villa 內超大的泳池裡面游泳囉！台北的衝忙對比峇里島的慢幽，根本是截然不同的兩個世界。</description>
+    </item>
     <item>
       <title>峇里島遊記 EP.2</title>
       <link>https://chanshenlee.github.io/blog/traveldiary2/</link>
@@ -42,7 +49,7 @@
       <link>https://chanshenlee.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://chanshenlee.github.io/about/</guid>
-      <description>&lt;p&gt;哈囉，我是路易斯，一名早 9 晚 6 的軟體工程師&lt;/p&gt;&#xA;&lt;p&gt;我喜歡亂想事情，在這個資訊爆炸的時代，一不小心，想法就會溜走&lt;/p&gt;&#xA;&lt;p&gt;因此我決定替自己打造一個空間，記錄生活、想法，還有那些一閃而過的靈感 —— &lt;strong&gt;路易斯&lt;/strong&gt;，請自行&lt;strong&gt;掌聲&lt;/strong&gt; &amp;#x1f44f;&lt;/p&gt;&#xA;&lt;!-- ![About image](blog1/photo1.jpeg) --&gt;</description>
+      <description>&lt;p&gt;哈囉，我是路易斯，一名早 9 晚 6 的軟體工程師&lt;/p&gt;&#xA;&lt;p&gt;我喜歡亂想事情，在這個資訊爆炸的時代，一不小心，想法就會溜走&lt;/p&gt;&#xA;&lt;p&gt;因此我決定替自己打造一個空間，記錄生活、想法，還有那些一閃而過的靈感 —— &lt;strong&gt;路易斯&lt;/strong&gt;，請&lt;strong&gt;掌聲&lt;/strong&gt; &amp;#x1f44f;&lt;/p&gt;&#xA;&lt;!-- ![About image](blog1/photo1.jpeg) --&gt;</description>
     </item>
   </channel>
 </rss>
